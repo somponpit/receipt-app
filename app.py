@@ -1,5 +1,7 @@
 from flask import Flask, render_template, request, send_file
 import pytesseract
+pytesseract.pytesseract.tesseract_cmd = "/usr/bin/tesseract"
+import pytesseract
 from PIL import Image
 from openpyxl import Workbook
 import os
